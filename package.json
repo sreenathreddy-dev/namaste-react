@@ -2,8 +2,9 @@
   "name": "y",
   "version": "1.0.0",
   "description": "This is Namaste react by Sreenath reddy",
-  "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -18,5 +19,9 @@
   "homepage": "https://github.com/sreenathreddy-dev/namaste-react#readme",
   "devDependencies": {
     "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }
