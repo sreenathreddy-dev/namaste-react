@@ -11,7 +11,7 @@ const RestaurantCard = (props) => {
         className="res-logo"
         src={CON_URL + cloudinaryImageId}
         // src={CON_URL} {cloudinaryImageId}
-        alt="Raja rani Ruchulu"
+        alt={name}
       />
       <h3>{name}</h3>
       <h4>{cuisines.join(", ")}</h4>

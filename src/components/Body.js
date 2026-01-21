@@ -2,13 +2,15 @@ import React, { useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
 import Shimmer from "./Shimmer";
+import { useParams } from "react-router-dom";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
 
-  console.log("Body rendered");
+  const { resId } = useParams();
+  console.log(resId, "isResId");
   useEffect(() => {
     fetchData();
   }, []);
