@@ -6,7 +6,6 @@ const RestaurantMenu = () => {
       "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.4862292&lng=78.40621680000001&restaurantId=932238&catalog_qa=undefined&submitAction=ENTER"
     );
     const json = await data.json();
-    console.log(json, "Some random text");
   };
 
   useEffect(() => {

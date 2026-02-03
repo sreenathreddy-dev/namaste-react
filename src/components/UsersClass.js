@@ -9,10 +9,8 @@ class UserClass extends React.Component {
         location: "Default",
       },
     };
-    // console.log(this.props.name + "Child constructor");
   }
   async componentDidMount() {
-    // console.log(this.props.name + "Child Did mount");
     const userData = await fetch(
       "https://api.github.com/users/sreenathreddy-dev"
     );
@@ -20,10 +18,8 @@ class UserClass extends React.Component {
     this.setState({
       userData: json,
     });
-    console.log(json);
   }
   render() {
-    // console.log(this.props.name + "Child component render");
     const { name, location } = this.state.userData;
     return (
       <>
